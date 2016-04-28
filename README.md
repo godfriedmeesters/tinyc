@@ -119,6 +119,7 @@ max(word numberA, word numberB)
 
 
 REM: you don’t have to declare the return type of a function; it is always a “word”.
+
 REM: “print” is a standard library function, as is “read”:
 
 
