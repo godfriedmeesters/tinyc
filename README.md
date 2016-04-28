@@ -100,8 +100,6 @@ for(counter = 0 to 4)
 
 ##Functions
 
-```<function> ::= <identifier> <parameter list> <top level declaration>* <statement>*, ```
-e.g.
 
 ```
 printArr(byte arr[],byte size)
