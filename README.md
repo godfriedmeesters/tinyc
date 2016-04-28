@@ -44,12 +44,13 @@ Tiny C is compiler program which accepts code according to the following BNF:
 
 To begin with, we’ll write the typical “hello world” program:
 
-	Go to the DOS command prompt and type in “edit hello.tc”.
-	Now type in the following two lines of code:
+⋅⋅⋅Go to the DOS command prompt and type in “edit hello.tc”. Now type in the following two lines of code:
 
+```
 Main()
 
 Print(“hello, world”);
+```
 
 	That’s it. Now compile the program by typing in the command “TCC hello.tc”.
 	If everything is OK, you get the message “Compilation successful”.
