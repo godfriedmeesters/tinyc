@@ -80,20 +80,21 @@ REM: Unlike C, there is no “%” operator.
 
 Boolean expressions are also formed like in C, except that “||” = “|”, “&&” = “&” and “= =” = “=”:
 
-year = 2004 & numbers[counter] = 13
+```year = 2004 & numbers[counter] = 13```
 
 ## Control Constructs
 
 You can choose among three different control constructs in Tiny C:
-
+```
 -	<if statement> ::= 'if' '(' <Boolean expression> ')' <statement> ['else'<statement>]
 
 -	<while statement> ::= 'while' ‘(‘ <Boolean expression> ‘)’  <statement>
 
 -	<for statement> ::= 'for' ‘(‘ <variable identifier> '=' <expression> 'to'  <expression> ‘)’
       <statement>
+      ```
 
-
+```
 if(year = 2003 | year = 2004)
 	counter = counter + 1;
 
@@ -102,11 +103,14 @@ while(true)
 
 for(counter = 0 to 4)
 	numbers[counter] = counter * 5;
+	```
 
-Functions
+##Functions
 
-<function> ::= <identifier> <parameter list> <top level declaration>* <statement>*, e.g.
+```<function> ::= <identifier> <parameter list> <top level declaration>* <statement>*, ```
+e.g.
 
+```
 printArr(byte arr[],byte size)
 byte counter;
 {
@@ -119,19 +123,23 @@ max(word numberA, word numberB)
 		return numberA;
 	else
 		return numberB;
+		```
 
 
 REM: you don’t have to declare the return type of a function; it is always a “word”.
 REM: “print” is a standard library function, as is “read”:
 
+```
 	<read statement> ::= 'read' <variable identifier>
 
             <print statement> ::= 'print' <expression> | <string> [',' <expression> | <string> ]*
+            ```
 
 
 
 ## Example program
 
+```
 factorial(byte b)
 {
 
@@ -188,4 +196,5 @@ read(b);
 print("the factorial of b is ",factorial(b));
 
 }
+```
 
