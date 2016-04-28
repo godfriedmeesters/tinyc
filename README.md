@@ -86,14 +86,6 @@ Boolean expressions are also formed like in C, except that “||” = “|”, �
 ## Control Constructs
 
 You can choose among three different control constructs in Tiny C:
-```
--	<if statement> ::= 'if' '(' <Boolean expression> ')' <statement> ['else'<statement>]
-
--	<while statement> ::= 'while' ‘(‘ <Boolean expression> ‘)’  <statement>
-
--	<for statement> ::= 'for' ‘(‘ <variable identifier> '=' <expression> 'to'  <expression> ‘)’
-      <statement>
-      ```
 
 ```
 if(year = 2003 | year = 2004)
@@ -104,7 +96,7 @@ while(true)
 
 for(counter = 0 to 4)
 	numbers[counter] = counter * 5;
-	```
+```	
 
 ##Functions
 
