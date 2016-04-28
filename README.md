@@ -1,6 +1,6 @@
 # Tiny C Compiler
 
-Introduction
+## Introduction
 
 To begin with, we’ll write the typical “hello world” program:
 
@@ -17,7 +17,7 @@ Print(“hello, world”);
 
 REM: Unlike C, Tiny C is not case sensitive.
 
-Variables
+## Variables
 
 Variables in Tiny C are declared the same ways as in C:
 
@@ -26,13 +26,13 @@ Word numbers[5] = {647,7878,34,898,454};
 
 REM: identifiers in Tiny C must be entirely alphabetic (so “last_year2” is not allowed) .
 
-Data types
+## Data types
 
 There are two data types in Tiny C:
 -	the “byte” is an integer containing values from 0 to 255
 -	the “word” is also an integer containing values from 0 to 65535    
 
-Expressions
+## Expressions
 
 Arithmetic expressions in Tiny C are formed in exactly the same way as in C.
 
@@ -43,9 +43,7 @@ Boolean expressions are also formed like in C, except that “||” = “|”, �
 
 year = 2004 & numbers[counter] = 13
 
-
-
-Control Constructs
+## Control Constructs
 
 You can choose among three different control constructs in Tiny C:
 
@@ -93,9 +91,7 @@ REM: “print” is a standard library function, as is “read”:
 
 
 
-
-
-Example program
+## Example program
 
 factorial(byte b)
 {
