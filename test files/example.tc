@@ -1,0 +1,61 @@
+factorial(byte b)
+{
+
+ if(b = 0 | b = 1)
+      return 1;
+ else
+      return b * factorial(b-1);
+}
+
+
+selectionSort(word numbers[], word arraySize)
+word i,j,min,temp;
+{
+  for (i = 0 to arraySize-2)
+  {
+    min = i;
+    for (j = i+1 to arraySize-1)
+    {
+      if (numbers[j] < numbers[min])
+        min = j;
+    }
+    temp = numbers[i];
+    numbers[i] = numbers[min];
+    numbers[min] = temp;
+  }
+}
+
+printarr(word arr[],byte size)
+byte i;
+{
+ for(i = 0 to size-1)
+ {
+  print(arr[i],endl);
+ }
+}
+
+main()
+byte b;word arr[5] = {4234,2333,2212,62451,24220};
+{
+
+print("***************************************",endl);
+print("         Tiny C example program        ",endl);
+print("***************************************",endl);
+
+
+print("Contents of 'arr' before selection sort:",endl);
+printarr(arr,5);
+
+selectionSort(arr,5);
+
+print("And contents of 'arr' after selection sort:",endl);
+printarr(arr,5);
+
+print(endl,"Recursive Factorial Computation:",endl,endl);
+
+print("Enter a number:");
+read(b);
+
+print(endl,"The factorial of ",b," is ",factorial(b),"...");
+
+}
