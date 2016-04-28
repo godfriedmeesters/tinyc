@@ -1,4 +1,4 @@
-				A quick tutorial on Tiny C
+# Tiny C Compiler
 
 Introduction
 
