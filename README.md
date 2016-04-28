@@ -59,9 +59,10 @@ REM: Unlike C, Tiny C is not case sensitive.
 ## Variables
 
 Variables in Tiny C are declared the same ways as in C:
-
+```
 Byte counter, year = 2004;
 Word numbers[5] = {647,7878,34,898,454};
+```
 
 REM: identifiers in Tiny C must be entirely alphabetic (so “last_year2” is not allowed) .
 
