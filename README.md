@@ -2,6 +2,46 @@
 
 ## Introduction
 
+Tiny C is compiler program which accepts code according to the following BNF:
+```
+<program> ::= <function>*
+<function> ::= <identifier> <parameter list> <top level declaration>* <statement>*  
+<parameter list> ::= '(' <variable list> ')'
+<top level declaration> ::= <variable list> ';'         
+<variable list>  ::= <data type> <identifier> [',' <identifier>]* | <data type> <identifier> '[' <array size> ']'
+<data type> ::= 'byte' | 'word'
+<statement> ::= '{' <compound statement> '}' | <statement> ';'
+<compound statement> ::= <statement>* 
+<statement> ::= <if statement>            |
+                <while statement>         |  
+                <for statement>           |
+                <read statement>          |
+                <print statement>         |
+                <assignment statement>    |
+		      <function call statement> |
+		      <return statement>        |
+		      <null statement> 
+<if statement> ::= 'if' '(' <boolean expression> ')' <statement> ['else' <statement>]
+<while statement> ::= 'while' '(' <boolean expression> ') ' 						<statement>
+<for statement> ::= 'for' '(' identifier '=' <expression> 'to' 
+<expression> ')' <statement>
+<read statement> ::= 'read' <identifier>
+<print statement> :: 'print' <expression> | <string>
+                      [',' <expression> | <string> ]*
+<assignment statement> ::= <identifier> '=' <expression> ';'
+<function call statement> ::= <identifier> '(' [<argument list>] ')' ';'
+<argument list> ::= <identifier> [',' <identifier>]*
+<return statement> ::= 'return' <expression> ';'
+<null statement> ::= ';'
+<boolean expression> ::= <relation> [<'|' | '&'> <relation>]*
+<relation> ::= <expression> [<'>' | '<' | '=' | '>=' | '<=' > <expression>]
+<expression> ::= <term> [<'+' | '-'>  <term>]*
+<term> = <factor> [<'*' | '/'> <factor>]*
+<factor> = '(' <boolean expression> ')' | <number> | <identifier> | <'true' | 'false'>
+```
+
+
+
 To begin with, we’ll write the typical “hello world” program:
 
 	Go to the DOS command prompt and type in “edit hello.tc”.
