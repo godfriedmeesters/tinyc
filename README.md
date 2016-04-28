@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Tiny C is compiler program which accepts code according to the following BNF:
+Tiny C is a simple compiler which accepts code according to the following BNF:
 ```
 <program> ::= <function>*
 <function> ::= <identifier> <parameter list> <top level declaration>* <statement>*  
