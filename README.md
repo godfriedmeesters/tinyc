@@ -52,9 +52,7 @@ Main()
 Print(“hello, world”);
 ```
 
-	That’s it. Now compile the program by typing in the command “TCC hello.tc”.
-	If everything is OK, you get the message “Compilation successful”.
-	Now run the program “hello.exe”. 
+That’s it. Now compile the program by typing in the command “TCC hello.tc”. If everything is OK, you get the message “Compilation successful”. Now run the program “hello.exe”. 
 
 REM: Unlike C, Tiny C is not case sensitive.
 
