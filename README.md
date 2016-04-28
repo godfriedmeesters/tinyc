@@ -114,7 +114,8 @@ max(word numberA, word numberB)
 		return numberA;
 	else
 		return numberB;
-		```
+
+```
 
 
 REM: you don’t have to declare the return type of a function; it is always a “word”.
